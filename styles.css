@@ -1,7 +1,6 @@
 head {
   color: black;
   text-align: center;
-
 }
 body {
   padding:0;
@@ -88,4 +87,10 @@ img {
   border-style: solid;
   padding: 10px 20px 10px 20px;
   margin: 0px 15px 15px 20px;
+}
+
+footer {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 12px;
 }
