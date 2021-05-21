@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>Survey for [website name]</title>
+  </head>
+  <body>
+    <div class="header">
+      <h1>Survey</h1>
+    </div>
+
+    <div class="websiteLink">
+      <a target="_blank" href="https://colourpop.com/">
+      <img src="colourpop.png" alt="https://colourpop.com/"></a>
+    </div>
+
+    <p class="instructions">
+      Please click on the image above to visit the ColourPop and answer the following questions:
+    </p>
+
+    <div class="surveyContainer">
+      <form class="question" name="question1" action="index.html" method="post">
+        <p class="prompt">Personal Information:</p>
+        <div class="personalInfo">
+          <p class="answer">First Name</p>
+          <input class="textInputBox" type="text" name="firstName" value=""><br>
+          <p class="answer">Last Name</p>
+          <input class="textInputBox" type="text" name="lastName" value=""><br>
+          <p class="answer">Email</p>
+          <input class="textInputBox" type="text" name="email" value="">
+        </div>
+      </form>
+
+      <p class="instructions">
+        For the following questions, state how strongly you agree/disagree with the statement
+      </p>
+
+      <form class="question" name="question" action="index.html" method="post">
+        <p class="prompt">This website is easy to use.</p>
+        <div class="answer">
+          Strongly agree
+          <input type="radio" name="option" value="">
+        </div>
+        <div class="answer">
+          Somewhat agree
+          <input type="radio" name="option" value="">
+        </div>
+        <div class="answer">
+          Somewhat disagree
+          <input type="radio" name="option" value="">
+        </div>
+        <div class="answer">
+          Strongly disagree
+          <input type="radio" name="option" value="">
+        </div>
+      </form>
+
+      <form class="question" name="question"action="index.html" method="post">
+        <p class="prompt">This website is pleasing to look at.</p>
+        <div class="answer">
+          Strongly agree
+          <input type="radio" name="option" value="">
+        </div>
+        <div class="answer">
+          Somewhat agree
+          <input type="radio" name="option" value="">
+        </div>
+        <div class="answer">
+          Somewhat disagree
+          <input type="radio" name="option" value="">
+        </div>
+        <div class="answer">
+          Strongly disagree
+          <input type="radio" name="option" value="">
+        </div>
+      </form>
+
+      <form class="question" name="question" action="index.html" method="post">
+        <p class="prompt">I am likely to recommend this website to a friend.</p>
+        <div class="answer">
+          Strongly agree
+          <input type="radio" name="option" value="">
+        </div>
+        <div class="answer">
+          Somewhat agree
+          <input type="radio" name="option" value="">
+        </div>
+        <div class="answer">
+          Somewhat disagree
+          <input type="radio" name="option" value="">
+        </div>
+        <div class="answer">
+          Strongly disagree
+          <input type="radio" name="option" value="">
+        </div>
+      </form><br>
+
+      <p class="instructions">
+        For the following question, select all statements you agree with
+      </p>
+
+      <form class="question" name="question" action="index.html" method="post">
+        <div class="answer">
+          <input type="checkbox" name="option" value="">
+          The images on this website are helpful
+        </div><br>
+        <div class="answer">
+          <input type="checkbox" name="option" value="">
+          Product pricing is clear
+        </div><br>
+        <div class="answer">
+          <input type="checkbox" name="option" value="">
+          Product information is relevant
+        </div><br>
+        <div class="answer">
+          <input type="checkbox" name="option" value="">
+          It is easy to find what you are looking for
+        </div><br>
+      </form><br>
+
+      <p class="instructions">
+        How would you rate this website on a scale from 1 to 10?
+      </p>
+      <select class="rateSelect" name="">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+      </select>
+
+      <form class="question" action="index.html" method="post">
+        <p class="prompt">Comments:</p>
+        <textarea class="comments" rows="5" cols="5"></textarea><br>
+      </form>
+
+      <button class="submitBtn" type="button" name="submitBtn">Submit</button>
+    </div>
+  </body>
+</html>

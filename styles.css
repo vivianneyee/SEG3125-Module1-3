@@ -1,0 +1,91 @@
+head {
+  color: black;
+  text-align: center;
+
+}
+body {
+  padding:0;
+  top: 0;
+  margin: auto;
+  margin-top: 10px;
+  color: black;
+  font-family: sans-serif;
+  font-size: 14px;
+  background-color: #f9e3fc;
+  font-family: "Optima", sans-serif;
+  width: 80vw;
+  border: 1px;
+  border-style: solid;
+}
+
+.header {
+  text-align: center;
+  padding:10px;
+  margin:0;
+  border-bottom: 1px;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-style: solid;
+  font-weight: bold;
+}
+
+img {
+  width: 60%;
+  padding-top: 10px;
+}
+
+.instructions {
+  padding-left: 20px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.personalInfo {
+  display: inline-flex;
+}
+
+.prompt {
+  margin: 10px 10px 10px 0px;
+  font-weight: bold;
+}
+
+.textInputBox {
+  margin-right: 10px;
+  height: 25px
+}
+
+.answer {
+  display: inline;
+  margin-right: 10px;
+}
+
+.websiteLink {
+  text-align: center;
+  font-size: 20px;
+  padding-top: 20px;
+}
+
+.question {
+  padding: 10px 0px 10px 20px;
+}
+
+.rateSelect {
+  margin-left: 20px;
+  padding: 5px 10px 5px 10px;
+
+}
+
+.comments {
+  width: 250px;
+  height: 100px;
+  word-wrap: break-word;
+}
+
+.submitBtn {
+  background-color: white;
+  border: 1px;
+  border-style: solid;
+  padding: 10px 20px 10px 20px;
+  margin: 0px 15px 15px 20px;
+}
