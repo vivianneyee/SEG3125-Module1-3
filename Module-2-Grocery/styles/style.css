@@ -57,8 +57,17 @@ h1 {
 
 .tabcontent button {
   background-color: #ffd9eb;
-  border-color: #c2769a;
+  border-color: #e6a8c3;
+  border-width: thin;
   margin-top: 6px;
+}
+
+.tabcontent button:hover {
+  background-color: #f0c2d7;
+}
+
+.tabcontent button.active {
+  background-color: #e6a8c3;
 }
 
 footer {
