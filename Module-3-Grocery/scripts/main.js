@@ -15,18 +15,37 @@ for (i = 0; i < coll.length; i++) {
   });
 }
 
+function goToCart() {
+  var checkout = document.getElementById("checkout");
+  var shop = document.getElementById("shop");
+  checkout.style.display = "grid";
+  shop.style.display = "none";
+}
+
+function goToProducts() {
+  var checkout = document.getElementById("checkout");
+  var shop = document.getElementById("shop");
+  checkout.style.display = "none";
+  shop.style.display = "grid";
+}
 // generate a checkbox list from a list of products
 // it makes each product name as the label for the checkbos
 
-function populateListProductChoices(slct1, slct2) {
-    var s1 = document.getElementById(slct1);
+function populateListProductChoices(slct2) {
     var s2 = document.getElementById(slct2);
 
 	// s2 represents the <div> in the Products tab, which shows the product list, so we first set it empty
     s2.innerHTML = "";
+    restrictions = document.getElementsByName("dietSelectOption");
+    var restriction;
+    for (i = 0; i < restrictions.length; i++) {
+      if (restrictions[i].checked) {
+        restriction = restrictions[i].value;
+      }
+    }
 
 	// obtain a reduced list of products based on restrictions
-    var optionArray = restrictListProducts(products, s1.value);
+    var optionArray = restrictListProducts(products, restriction);
     var checkbox = document.getElementById("organic");
     if (checkbox.checked) {
       var organicProducts = [];
@@ -72,6 +91,13 @@ function populateListProductChoices(slct1, slct2) {
 
 		// create a breakline node and add in HTML DOM
 		s2.appendChild(document.createElement("br"));
+
+    var prodInfo = document.getElementById("productInfo");
+    if (optionArray.length > 0){
+      prodInfo.innerHTML = "We preselected products based on your restrictions.";
+    } else {
+      prodInfo.innerHTML = "Select a filter to see products";
+    }
 	}
 }
 
@@ -98,6 +124,8 @@ function selectedItems(){
 			chosenProducts.push(ele[i].value);
 		}
 	}
+  var numOfItems = document.getElementById("numOfItems");
+  numOfItems.innerHTML = chosenProducts.length;
 
 	// add paragraph and total price
 	c.appendChild(para);

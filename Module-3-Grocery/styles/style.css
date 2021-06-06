@@ -6,18 +6,46 @@ body {
   font-family: "Optima", sans-serif;
 }
 
+.titleSection {
+  display: grid;
+  grid-template-columns: 90% 10%;
+}
+
 h1 {
   text-align: center;
   font-weight: normal;
 }
 
-.title img {
-  width: 5%;
+.cartIcon {
+  padding-top: 10px;
+  display: flex;
+  cursor: pointer;
 }
 
-.title h1{
-  display: inline;
-  padding-left: calc((100vw - 383px)/2);
+.cartIcon img {
+  width: 45px;
+  height: 45px;
+}
+
+.pages {
+  position: absolute;
+  width: 98%;
+}
+
+.shop {
+  top: 0;
+  left: 0;
+  display:grid;
+  grid-template-columns: 25% 75%;
+  grid-column-gap: 10px;
+  position: relative;
+}
+
+.checkout {
+  display: none;
+  grid-template-columns: 75% 25%;
+  grid-column-gap: 10px;
+  position:relative;
 }
 
 .collapsible {
@@ -30,7 +58,8 @@ h1 {
   border-width: thin;
   outline: none;
   text-align: center;
-  font-size: 16px;
+  font-size: 18px;
+  font-family: "Optima", sans-serif;
 }
 
 .active, .collapsible:hover {
@@ -54,11 +83,59 @@ h1 {
   border-width: thin;
 }
 
-.collapsibleContent button {
+.Products button {
   background-color: #ffd9eb;
   border-color: #e6a8c3;
   border-width: thin;
   margin-top: 6px;
+  margin-bottom: 10px;
+}
+
+.Products {
+  border-style: solid;
+  border-width: thin;
+  padding: 0 12px;
+  margin-right: 10px;
+  height: calc(100vh - 130px);
+}
+
+.Products h2 {
+  text-align: center;
+  font-weight: bold;
+}
+
+.cart {
+  font-size: 18px;
+  background-color: #ffd9eb;
+  padding: 16px 0 16px 0;
+  border-style: solid;
+  border-width: thin;
+  text-align: center;
+}
+
+.cartContent button {
+  background-color: #ffd9eb;
+  border-color: #e6a8c3;
+  border-width: thin;
+  margin-top: 6px;
+  margin-bottom: 10px;
+
+}
+.cartContent {
+  padding-left: 4px;
+  border-style: solid;
+  border-width: thin;
+  padding-left: 10px;
+  height: calc(100vh - 190px);
+}
+
+.checkoutOptionsForm {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.deliveryPickupContainer {
+  margin-right: 10px;
 }
 
 footer {

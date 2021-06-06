@@ -9,15 +9,17 @@ var products = [
     lactoseFree: true,
     nutFree: true,
     organic: true,
+    baby: false,
 		price: 1.99
 	},
 	{
-		name: "bread",
+		name: "crackers",
 		vegetarian: true,
 		glutenFree: false,
     lactoseFree: true,
     nutFree: true,
     organic: true,
+    baby: false,
 		price: 2.35
 	},
 	{
@@ -27,6 +29,7 @@ var products = [
     lactoseFree: true,
     nutFree: true,
     organic: false,
+    baby: false,
 		price: 9.99
 	},
   {
@@ -36,6 +39,7 @@ var products = [
     lactoseFree: false,
     nutFree: true,
     organic: false,
+    baby: false,
 		price: 4.49
   },
   {
@@ -45,6 +49,7 @@ var products = [
     lactoseFree: true,
     nutFree: false,
     organic: true,
+    baby: false,
 		price: 5.99
   },
   {
@@ -54,6 +59,7 @@ var products = [
     lactoseFree: false,
     nutFree: true,
     organic: false,
+    baby: false,
 		price: 5.49
   },
   {
@@ -63,6 +69,7 @@ var products = [
     lactoseFree: true,
     nutFree: true,
     organic: true,
+    baby: false,
 		price: 1.29
   },
   {
@@ -72,6 +79,7 @@ var products = [
     lactoseFree: true,
     nutFree: true,
     organic: false,
+    baby: false,
 		price: 8.29
   },
   {
@@ -81,6 +89,7 @@ var products = [
     lactoseFree: true,
     nutFree: false,
     organic: false,
+    baby: false,
 		price: 3.99
   },
   {
@@ -90,7 +99,38 @@ var products = [
     lactoseFree: true,
     nutFree: false,
     organic: true,
+    baby: false,
 		price: 4.79
+  },
+  {
+    name: "baby formula",
+		vegetarian: true,
+		glutenFree: true,
+    lactoseFree: false,
+    nutFree: true,
+    organic: false,
+    baby: true,
+		price: 5.89
+  },
+  {
+    name: "apple puree",
+		vegetarian: true,
+		glutenFree: true,
+    lactoseFree: true,
+    nutFree: true,
+    organic: true,
+    baby: true,
+		price: 2.00
+  },
+  {
+    name: "rice cereal",
+		vegetarian: true,
+		glutenFree: true,
+    lactoseFree: true,
+    nutFree: true,
+    organic: false,
+    baby: true,
+		price: 3.79
   }
 ];
 
@@ -112,6 +152,9 @@ function restrictListProducts(prods, restriction) {
 			products.push(prods[i]);
 		}
     else if ((restriction == "NutFree") && (prods[i].nutFree == true)){
+			products.push(prods[i]);
+		}
+    else if ((restriction == "Baby") && (prods[i].baby == true)){
 			products.push(prods[i]);
 		}
     else if (restriction == "None"){
