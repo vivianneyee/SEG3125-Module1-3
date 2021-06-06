@@ -1,0 +1,70 @@
+/* This style sheet is taken from  https://www.w3schools.com/howto/howto_js_tabs.asp> */
+
+/* Style the tab */
+body {
+  height: calc(100vh - 30px;);
+  font-family: "Optima", sans-serif;
+}
+
+h1 {
+  text-align: center;
+  font-weight: normal;
+}
+
+.title img {
+  width: 5%;
+}
+
+.title h1{
+  display: inline;
+  padding-left: calc((100vw - 383px)/2);
+}
+
+.collapsible {
+  background-color: #ffd9eb;
+  color: #383838;
+  cursor: pointer;
+  padding: 14px;
+  width: 100%;
+  border-style: solid;
+  border-width: thin;
+  outline: none;
+  text-align: center;
+  font-size: 16px;
+}
+
+.active, .collapsible:hover {
+  background-color: #f0c2d7;
+}
+
+.collapsible:after {
+  content: '\02795';
+  font-size: 14px;
+  color: #383838;
+  float: right;
+  margin-left: 5px;
+}
+
+.collapsibleContent {
+  padding: 12px 4px;;
+  display: none;
+  overflow: hidden;
+  background-color: white;
+  border-style: solid;
+  border-width: thin;
+}
+
+.collapsibleContent button {
+  background-color: #ffd9eb;
+  border-color: #e6a8c3;
+  border-width: thin;
+  margin-top: 6px;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  width: 99%;
+  height: 30px;
+}
